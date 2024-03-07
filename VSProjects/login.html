@@ -14,13 +14,37 @@
     </style>
 </head>
 <body>
-    <div class="header">登录</div>
-    <div style="display: flex;justify-content: center;align-items: center;">
-        <img src="../VSProjects/Resources/Resource/head.png" alt="head">
-    </div>
-    <textarea name="账号名：" id="1" cols="30" rows="10"></textarea>
-    <textarea name="密码：" id="2" cols="30" rows="10"></textarea>
+    <header>
+        <div class="header">登录</div>
+    </header>
+    
+    <section>
+        <div style="display: flex;justify-content: center;align-items: center;">
+            <img src="../VSProjects/Resources/Resource/head.png" alt="head">
+        </div>
+    </section>
+    
+    <section>
+        <form>
+            <label for="name">账户名:</label>
+            <input type="text" id="name" name="name">
+        </form>
 
-    <div style="background-color: blue;color: white;font-weight: bolder;font-size: 20;text-align: center;">登录</div>
+        <form>
+            <label for="password">密码:</label>
+            <input type="password" id="password" name="password">
+        </form>
+            
+          
+    </section>
+
+    <section>
+        <div style="background-color: blue;
+        color: white;
+        font-weight: bolder;
+        font-size: 20;
+        text-align: center;">登录</div>
+    </section>
+    
 </body>
 </html>

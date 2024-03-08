@@ -34,3 +34,8 @@ footer{
     background-color: black;
     color: white;
 }
+
+footer > div{
+    text-align: center;
+    flex: auto;
+}

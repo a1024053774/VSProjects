@@ -4,8 +4,45 @@
     <meta charset="UTF-8">
     <link rel="icon" href="../VSProjects/Resources/Resource/icon.png" type="image/png">
     <link rel="stylesheet" href="../VSProjects/css/CommonExternalStyle.css">
+    <link rel="stylesheet" href="../VSProjects/css/PanoramaStyle.css">
+    <link rel="stylesheet" href="../VSProjects/css/RowColumnStyle.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0",user-scale=no>
     <title>登录</title>
+    <style>
+       
+
+        form input{
+            outline: none;
+            border: none;
+            background-color: transparent;
+
+        }
+
+        form .login{
+            display: block;
+            width: 90%;
+            height: 60px;
+            margin: 20px auto;
+            background-color:  rgb( 32, 90, 163);
+            border: none;
+            border-radius: 8px;
+            color: white;
+            font-size: x-large;
+            font-weight: bold;
+        }
+
+        .username , .pwd{
+            height: 50px;
+            
+        }
+
+        .username span, .pwd span{
+            line-height: 50px;
+            font-weight: bold;
+            font-size: larger;
+        }
+        
+    </style>
 </head>
 <body>
     <header>
@@ -13,32 +50,26 @@
     </header>
     
     <section>
-        <div style="display: flex;justify-content: center;align-items: center;">
-            <img src="../VSProjects/Resources/Resource/head.png" alt="head">
-        </div>
+            <img style="display: block;margin: 80px auto;" src="../VSProjects/Resources/Resource/head.png" alt="head"> 
     </section>
     
-    <section>
-        <form>
-            <label for="name">账户名:</label>
-            <input type="text" id="name" name="name">
-        </form>
+    <div style="width: 90%;margin: 20px auto;">
+        <form action="" method="">
+            <div style="border: 1px solid gray; border-radius: 8px;">
+                <div class="username" style="border-bottom: 1px solid gray;">
+                    <span>用户名:</span>
+                    <input type="text">
+                </div>
 
-        <form>
-            <label for="password">密码:</label>
-            <input type="password" id="password" name="password">
-        </form>
-            
-          
-    </section>
+                <div class="pwd">
+                    <span>密码:</span>
+                    <input type="password">
+                </div>
+            </div>
 
-    <section>
-        <div style="background-color: blue;
-        color: white;
-        font-weight: bolder;
-        font-size: 20;
-        text-align: center;">登录</div>
-    </section>
+            <input class="login" type="button" value="登录">
+        </form>
+    </div>
     
 </body>
 </html>
